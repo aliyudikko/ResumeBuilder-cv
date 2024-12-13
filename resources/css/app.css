@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+    .select{
+
+        @apply w-full inline-block px-6 py-2 rounded text-base font-medium cursor-pointer
+        transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 
+        text-white pt-3  border-s-8 bg-fuchsia-600 border-fuchsia-800
+    }
+    .previous{
+
+        @apply shadow-lg w-full inline-block px-6 py-2 rounded text-base font-medium cursor-pointer
+        transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 
+       text-white pt-3  border-s-8 bg-fuchsia-600  border-fuchsia-800
+    }
+
+    .next {
+
+        @apply shadow-lg w-full inline-block px-6 py-2 rounded text-base font-medium cursor-pointer
+        transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 
+       text-white pt-3  border-s-8 bg-fuchsia-600 border-fuchsia-800 
+    }
+
+    .submit{
+
+        @apply shadow-lg w-full inline-block px-6 py-2 rounded text-base font-medium cursor-pointer
+        transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 
+       text-white pt-3  border-s-8 bg-fuchsia-600 border-fuchsia-800
+    }
+
+    .logo1{
+
+      @apply  rounded-full border border-fuchsia-600 absolute right-0 rotate-1 w-32 h-20
+    }
+    .input{
+
+        @apply rounded-sm focus:ring-1 
+         focus:ring-fuchsia-600 border 
+           border-fuchsia-500 h-11 w-44 md:w-96 mb-6
+        }
+    .form {
+
+        @apply bg-white h-auto w-[500px] md:h-auto md:w-auto
+        border-t-2 border-fuchsia-600 border-spacing-1
+        shadow-lg  rounded-lg flex pb-11 py-11 md:p-11 relative flex-col
+         items-center
+    }
+}
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background: whitesmoke;
+    box-shadow: 2px 0px 1px 3px  rgba(red, green, blue, alpha);
+}
+li{
+
+    font-size: 23px;
+}
+
+.container:hover  a{
+
+    display: block;
+}
+
+.container:hover  button{
+
+    display: block;
+}
+
+.templates {
+    width: 350px;
+    height:250px;
+}
+
+
+.data{
+
+    display: none;
+}
+select{
+    appearance: none;
+}
+
+.form-section{
+    display: none;
+}
+
+.form-section.current{
+
+    display: flex;
+}
+
+.parsley-errors-list{
+
+    color: rgb(255, 0, 0);
+}
+
